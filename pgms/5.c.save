@@ -1,0 +1,11 @@
+#include<stdio.h>
+#define pra(a,b) a##b
+
+main()
+{
+char a[10];
+
+a=pra(as,bs);
+printf("%s",a);
+
+}

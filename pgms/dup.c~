@@ -1,0 +1,25 @@
+#include <stdio.h> 
+int check (char a[])
+{
+int i,k=-1;
+for (i=0;i<strlen(a);i++)
+{
+if ( (a[i]==a[i+1]) && (a[i+1]==a[i+2]) )
+{
+k=i;
+i++;
+}
+
+if ( (a[i]==a[i+1]) )
+k=i;
+}
+return k;
+}
+main()
+{
+
+
+
+
+
+}

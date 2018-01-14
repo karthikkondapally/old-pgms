@@ -1,0 +1,7 @@
+
+ Enter the number of vertices:
+ Enter graph data in matrix form:
+
+ Enter the starting vertex:11
+
+ The node which are reachable are:

@@ -1,0 +1,37 @@
+etc/profile.d/vte.sh:      printf "%X" "'$c'"
+etc/profile.d/vte.sh:  printf "\e]7;file://%s" $HOSTNAME
+etc/profile.d/vte.sh:  printf "\a"
+etc/lsb-base-logging.sh:        printf " * $*       "
+etc/lsb-base-logging.sh:        printf ' '
+etc/lsb-base-logging.sh:        printf "\r"
+etc/lsb-base-logging.sh:            printf '['
+etc/lsb-base-logging.sh:            printf fail
+etc/apcupsd/apccontrol:	   printf "Continuing with shutdown."  | ${WALL}
+etc/bash.bashrc:		   printf "%s: command not found\n" "$1" >&2
+etc/grub.d/30_os-prober:	    printf '%s\n' "${prepare_boot_cache}"
+etc/grub.d/20_memtest86+:  printf '%s\n' "${prepare_boot_cache}"
+etc/grub.d/20_memtest86+:  printf '%s\n' "${prepare_boot_cache}"
+etc/grub.d/20_memtest86+:#  printf '%s\n' "${prepare_boot_cache}"
+etc/grub.d/20_memtest86+:#  printf '%s\n' "${prepare_boot_cache}"
+etc/grub.d/10_linux:    printf '%s\n' "${prepare_root_cache}" | sed "s/^/$submenu_indentation/"
+etc/grub.d/10_linux:    printf '%s\n' "${prepare_boot_cache}" | sed "s/^/$submenu_indentation/"
+etc/grub.d/20_linux_xen:  printf '%s\n' "${prepare_boot_cache}" | sed "s/^/$submenu_indentation/"
+etc/udev/rules.d/86-hpmud-hp_laserjet_professional_p1102.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="002a", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_professional_p1102 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_p1007.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="4817", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_p1007 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_p1006.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="3e17", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_p1006 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_p1505.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="3f17", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_p1505 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_1000.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="0517", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_1000 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_p1005.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="3d17", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_p1005 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_professional_p1102w.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="002a", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_professional_p1102w firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_p1008.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="4917", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_p1008 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_1020.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="2b17", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_1020 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_1005_series.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="1317", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_1005 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_professional_p1566.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="092a", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_professional_p1566 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/udev/rules.d/86-hpmud-hp_laserjet_1018.rules:SUBSYSTEM=="usb_device", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="4117", PROGRAM="/bin/sh -c 'X=%k; X=$${X#usbdev}; B=$${X%%%%.*}; D=$${X#*.}; logger -p user.info loading hp_laserjet_1018 firmware $$B $$D; printf %%03i:%%03i $$B $$D'", RUN+="/bin/sh -c '/usr/bin/hp-firmware -y3 -s%c &'"
+etc/init.d/postgresql:	echo "$LS" | awk 'BEGIN {rc=0} {if (match($4, "down")) rc=3; printf ("%s/%s (port %s): %s\n", $1, $2, $3, $4)}; END {exit rc}'
+etc/ca-certificates/update.d/jks-keystore:    printf -- "-server KNOWN\n" > $temp_jvm_cfg
+etc/bash_completion.d/grub:                 printf '%s\n' ${tmp%.mod}
+Binary file proc/3414/task/3414/cmdline matches
+Binary file proc/3414/cmdline matches
+Binary file proc/3423/task/3423/cmdline matches
+Binary file proc/3423/cmdline matches
